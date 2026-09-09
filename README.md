@@ -32,11 +32,29 @@ The system was designed and tested virtually using **Factory I/O** connected to 
 
 ---
 
+## Factory I/O Simulation
+
+The following screenshots show the simulated industrial environment and the connection between Factory I/O and the PLC control system.
+
+### System Overview
+
+![Factory I/O System Overview](assets/factory_io_system_overview.jpeg)
+
+### Control Panel
+
+![Factory I/O Control Panel](assets/factory_io_control_panel.jpeg)
+
+### PLC I/O Mapping
+
+![Factory I/O PLC Mapping](assets/factory_io_plc_mapping.jpeg)
+
+---
+
 ## Control Logic
 
 The PLC program was implemented using **Ladder Logic (LAD)** in Siemens TIA Portal.
 
-The control logic is organized around three main functions:
+The control logic is organized around three main functions.
 
 ### Network 1 — Automatic Sorting
 
@@ -50,6 +68,14 @@ Handles the main operating sequence including:
 - Left/right transfer control
 - Product counter update
 
+#### System Startup and Height Detection
+
+![Network 1 Startup](assets/ladder_network1_startup.jpeg)
+
+#### Transfer Control and Product Counter
+
+![Network 1 Transfer and Counter](assets/ladder_network1_transfer_counter.jpeg)
+
 ### Network 2 — Stop & Reset
 
 Handles:
@@ -59,6 +85,8 @@ Handles:
 - Clearing internal states
 - Resetting outputs and counter when required
 
+![Network 2 Reset and Stop](assets/ladder_network2_reset_stop.jpeg)
+
 ### Network 3 — Emergency Safety
 
 Handles emergency conditions by activating:
@@ -66,6 +94,8 @@ Handles emergency conditions by activating:
 - Red warning indicator
 - Alarm siren
 - Safe system response
+
+![Network 3 Emergency Alarm](assets/ladder_network3_emergency_alarm.jpeg)
 
 ---
 
@@ -122,18 +152,42 @@ I also participated in refining the project after instructor feedback, including
 
 ## Repository Structure
 
-The repository will contain:
-
 ```text
 plc-height-sorting-system/
 │
 ├── plc-project/
-│   └── TIA Portal project files
+│   └── PLC_Height_Sorting_TIA_Portal_V17.zip
 │
 ├── docs/
-│   └── Project documentation
+│   └── PLC_Height_Sorting_Report_FINAL_Touches.pdf
 │
 ├── assets/
-│   └── Factory I/O and PLC screenshots
+│   ├── factory_io_system_overview.jpeg
+│   ├── factory_io_control_panel.jpeg
+│   ├── factory_io_plc_mapping.jpeg
+│   ├── ladder_network1_startup.jpeg
+│   ├── ladder_network1_transfer_counter.jpeg
+│   ├── ladder_network2_reset_stop.jpeg
+│   └── ladder_network3_emergency_alarm.jpeg
 │
 └── README.md
+```
+
+---
+
+## Project Files
+
+The repository includes the original **Siemens TIA Portal V17 project archive**, allowing the PLC project to be opened and inspected in TIA Portal.
+
+The complete project report is also included and provides additional details about the system design, PLC I/O mapping, Ladder Logic implementation, operating sequence, and project development.
+
+- **PLC Project:** `plc-project/PLC_Height_Sorting_TIA_Portal_V17.zip`
+- **Project Report:** `docs/PLC_Height_Sorting_Report_FINAL_Touches.pdf`
+
+---
+
+## Academic Project
+
+This project was developed as part of an academic team project in **Mechatronics Engineering**.
+
+The project provided practical experience in PLC programming, industrial automation, sensor-based control, virtual commissioning, and the integration of Siemens TIA Portal with Factory I/O.
