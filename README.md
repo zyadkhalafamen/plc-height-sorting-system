@@ -1,5 +1,12 @@
 # PLC-Based Height Sorting System
 
+![PLC](https://img.shields.io/badge/Control-PLC-009999?style=flat-square)
+![TIA Portal](https://img.shields.io/badge/Siemens-TIA%20Portal%20V17-009999?style=flat-square)
+![Language](https://img.shields.io/badge/Programming-Ladder%20Logic-orange?style=flat-square)
+![Factory I/O](https://img.shields.io/badge/Simulation-Factory%20I%2FO-blue?style=flat-square)
+![PLCSIM](https://img.shields.io/badge/PLC%20Simulation-S7--PLCSIM-blueviolet?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Simulation%20Tested-brightgreen?style=flat-square)
+
 An automated height-based sorting system developed using **Siemens TIA Portal**, **Factory I/O**, and **S7-PLCSIM**.
 
 The system detects the height of incoming products and automatically routes them to the appropriate conveyor path while providing start/stop control, product counting, reset functionality, and emergency safety handling.
